@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Услуги {{ service.title }}
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			<div class="alert alert-secondary" role="alert">
+  <h4 class="alert-heading">{{ service.title }}</h4>
+  <p>{{ service.body }}</p>
+  <hr>
+  <p class="mb-0">Мы позвоним в течении 15 минут после отправки формы.</p>
+</div>
+</div>
+</div>
+	<div class="row">
+		<div class="col-sm-6">
+			
+		</div>
+		<div class="col-sm-6 border border-secondary rounded mb-4">
+			<h1>		</h1>
+			<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputName4"></label>
+      <input type="name" class="form-control" id="inputName4" placeholder="Имя">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputSurname4"></label>
+      <input type="surname" class="form-control" id="inputSurname4" placeholder="Фамилия">
+    </div>
+  </div>
+   <div class="form-row">
+    <div class="form-group col-md-6">
+       <div class="form-row">
+      <label for="inputPhone4">Номер телефона</label>
+      <input type="phone" class="form-control" id="inputPhone4" placeholder="8-XXX-XXX-XX-XX">
+    </div>
+</div>
+  <div class="form-group col-md-12">
+    <label for="inputAddress">Доставить от...</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Калиновская ул. 42">
+  </div>
+  <div class="form-group col-md-12">
+    <label for="inputAddress2">Доставить в...</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="ул. Терешковой, 7">
+  </div>
+    <div class="form-group col-md-12">
+      <label for="inputText">Описание заказа</label>
+      <input type="text" class="form-control" id="inputText">
+    </div>
+  <button type="submit" class="btn btn-primary mb-3">Отправить заявку</button>
+</form>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

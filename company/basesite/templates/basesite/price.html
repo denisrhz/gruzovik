@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Грузчики цены в Костроме
+{% endblock %}
+
+{% block content %}
+  <h1>Услуги грузчиков
+в Костроме</h1>
+<div class="container mt-3">
+  {% for type in types %}
+	<h2>{{ type.title }}</h2>
+<div class="row">
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Название</th>
+      <th scope="col">Цена</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for table in type.tables.all %}
+    {% if table.active %}
+    <tr>
+      <td>{{ table.title }}</td>
+      <td>{{ table.price }} </td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endfor %}
+
+
+{% endblock %}

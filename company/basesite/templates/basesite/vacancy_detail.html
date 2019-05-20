@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Требуется {{ vacancy.title }}
+{% endblock %}
+
+{% block content %}
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+  		<h1>{{ vacancy.title }}<span class="badge badge-secondary offset-md-1">{{ vacancy.price|floatformat:0 }} руб.</span></h1>
+</div>
+
+    <p class="lead">{{vacancy.body}}</p>
+  </div>
+</div>
+
+{% endblock %}
