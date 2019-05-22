@@ -18,7 +18,7 @@
     Грузовичок
       </a>
     </div>
-    <div class="col">
+    <div class="col-md">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Услуги
@@ -30,18 +30,18 @@
         </div>
       </li>
     </div>
-<div class="col-sm">
+<div class="col-md">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link text-white" href="{% url 'vacancy_url' %}">Вакансии <span class="sr-only">(current)</span></a>
       </li>
     </div>
-    <div class="col-sm">
+    <div class="col-md">
       <li class="nav-item active">
         <a class="nav-link text-white" href="{% url 'stock_url' %}">Акции <span class="sr-only">(current)</span></a>
       </li>
     </div>
-    <div class="col-sm">
+    <div class="col-md">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           О компании
@@ -54,21 +54,22 @@
         </div>
       </li>
     </div>
-    <div class="col-sm">
+    <div class="col-md">
       <li class="nav-item active">
         <a class="nav-link text-white" href="{% url 'reviews_url' %}">Отзывы <span class="sr-only">(current)</span></a>
       </li>
     </div>
-    <div class="col-sm">
+    <div class="col-md">
       <li class="nav-item active">
         <a class="nav-link text-white" href="{% url 'contacts_url' %}"> Контакты <span class="sr-only">(current)</span></a>
       </li>
     </div>
-    <div class="col-sm">
-    <button type="button" class="btn btn-outline-warning my-2 my-lg-0">Заказать</button>
+    <div class="col-md">
+    <a href="{% url 'fast_url' %}" type="button" class="btn btn-outline-warning my-2 my-lg-0 btn-lg">Заказать</a>
   </div>
     </ul>
   </div>
+</div>
 </nav>
 
    <div class="container mt-4">

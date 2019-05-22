@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Быстрый заказ
+{% endblock %}
+
+{% block content %}
+<h1>Мы перезвоним через несколько минут.</h1>
+<form class="form-inline mt-4">
+  <div class="form-group mb-2">
+    <label for="staticEmail2" class="sr-only">Email</label>
+    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Введите номер телефона">
+  </div>
+  <div class="form-group mx-sm-3 mb-2">
+    <label for="inputPassword2" class="sr-only">Phone</label>
+    <input type="inputPhone" class="form-control" id="inputPhone" placeholder="8-XXX-XXX-XX-XX">
+  </div>
+  <button type="submit" class="btn btn-warning mb-2">Отправить заявку</button>
+</form>
+{% endblock %}

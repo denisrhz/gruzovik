@@ -1,6 +1,10 @@
 from django.shortcuts import render
 from .models import *
 
+def fast(request):
+	services = Services.objects.all()
+	return render(request, 'basesite/fast.html', context={'services': services})
+
 def home(request):
 	services = Services.objects.all()
 	return render(request, 'basesite/home.html', context={'services': services})

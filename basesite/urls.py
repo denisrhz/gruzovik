@@ -9,4 +9,5 @@ urlpatterns = [
 	path('stock/', stock, name='stock_url'),
 	path('reviews/', reviews, name='reviews_url'),
 	path('contacts/', contacts, name='contacts_url'),
+	path('fast/', fast, name='fast_url'),
 ]
