@@ -1,7 +1,6 @@
 from django.db import models
 from django.shortcuts import reverse
 
-
 class Vacancy(models.Model):
 	title = models.CharField('Заголовок', max_length=150, db_index=True)
 	price = models.DecimalField('З/П', max_digits=8, decimal_places=2)
