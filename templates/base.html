@@ -12,13 +12,13 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <div class="row">
-         <div class="col-md"> 
+          <div class="col-sm">
       <a class="navbar-brand" href="{% url 'home_url' %}">
       <img src="https://atlantic-freight.com/s/i/air1.png" width="30" height="30" class="d-inline-block align-top" alt="">
     Грузовичок
       </a>
     </div>
-    <div class="col-md">
+    <div class="col-sm">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Услуги
@@ -30,18 +30,17 @@
         </div>
       </li>
     </div>
-<div class="col-md">
-    <ul class="navbar-nav mr-auto">
+    <div class="col-sm">
       <li class="nav-item active">
         <a class="nav-link text-white" href="{% url 'vacancy_url' %}">Вакансии <span class="sr-only">(current)</span></a>
       </li>
     </div>
-    <div class="col-md">
+    <div class="col-sm">
       <li class="nav-item active">
         <a class="nav-link text-white" href="{% url 'stock_url' %}">Акции <span class="sr-only">(current)</span></a>
       </li>
     </div>
-    <div class="col-md">
+    <div class="col-sm">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           О компании
@@ -54,24 +53,22 @@
         </div>
       </li>
     </div>
-    <div class="col-md">
+    <div class="col-sm">
       <li class="nav-item active">
         <a class="nav-link text-white" href="{% url 'reviews_url' %}">Отзывы <span class="sr-only">(current)</span></a>
       </li>
     </div>
-    <div class="col-md">
+    <div class="col-sm">
       <li class="nav-item active">
         <a class="nav-link text-white" href="{% url 'contacts_url' %}"> Контакты <span class="sr-only">(current)</span></a>
       </li>
     </div>
-    <div class="col-md">
+    <div class="col-sm">
     <a href="{% url 'fast_url' %}" type="button" class="btn btn-outline-warning my-2 my-lg-0 btn-lg">Заказать</a>
   </div>
-    </ul>
-  </div>
+</div>
 </div>
 </nav>
-
    <div class="container mt-4">
     <div class="row">
       <div class="col-10 offset-md-1">
@@ -80,6 +77,43 @@
       {% endblock %}
       </div>
     </div>
+   </div>
+
+   <div class="footer mt-4" style="background-color: #343a40">
+     
+        <div class="contacts-wrap offset-md-1" itemscope="" itemtype="http://schema.org/Organization">
+            <div>
+          <div class="contacts-item">
+             <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">             
+                        <h2 class="text-warning" itemprop="name">«Грузовичок»</h2>
+            <div class="contacts-item__phone"><a href="tel:+74953246760" itemprop="telephone">8 (495) 324-67-60</a></div>
+            <div class="text-white">Бесплатный вызов</div>
+            <div class="contacts-item__phone"><a href="tel:+78124040000" itemprop="telephone">8 (800) 100-33-30</a></div>
+            <div itemprop="address" class="text-white" itemscope="">г. Москва, 1-й проезд Перова поля, д. 9, стр. 2, эт. 3. Деловой Центр «Гелиос Сити»<br></div>
+              </div>
+          </div>
+          </div>
+          <div class="contacts-item contacts-item--press">
+            <div class="text-white">Отдел контроля качества</div>
+            <div class="contacts-item__phone"><a href="tel:+74952155809">8 (495) 215-58-09</a></div>
+            <div class="text-white">круглосуточно</div>
+            <a href="mailto:911@gruzovichkof.ru" class="contacts-item__email">911@gruzovichkof.ru</a>
+          </div>
+          <div class="contacts-item">
+            <div class="text-white">Бухгалтерия<br><span style="font-size: 18px;">Отдел по работе с корпоративными клиентами</span></div>
+            <div class="text-white"><a href="tel:+74952151746">8 (495) 215-17-46</a></div><a href="mailto:zakaz-msk@gruzovichkof.ru" class="text-white" itemprop="email">zakaz-msk@gruzovichkof.ru</a><br><a href="mailto:zvonok-msk@gruzovichkof.ru" class="text-white">text-whitezvonok-msk@gruzovichkof.ru</a>
+          </div>
+          <!--div class="contacts-mails__item">
+            <div class="contacts-mails__title">Отдел заключения договоров</div><a href="mailto:dogovor@gruzovichkof.ru" class="contacts-mails__email">dogovor@gruzovichkof.ru</a>
+          </div-->
+          <div class="contacts-mails__item">
+            <div class="text-white">Благотворительные проекты</div><a href="mailto:blago@gruzovichkof.ru" class="contacts-mails__email">blago@gruzovichkof.ru</a>
+          </div>
+          <div class="contacts-mails__item">
+            <div class="text-white">Отдел маркетинга и рекламы</div><a href="mailto:reklama@gruzovichkof.ru" class="contacts-mails__email">reklama@gruzovichkof.ru</a>
+          </div>
+        </div>
+
    </div>
 
 

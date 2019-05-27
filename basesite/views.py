@@ -1,5 +1,7 @@
-from django.shortcuts import render
+
+from django.shortcuts import render, redirect
 from .models import *
+from .forms import *
 
 def fast(request):
 	services = Services.objects.all()
@@ -30,9 +32,20 @@ def stock(request):
 
 def reviews(request):
 	services = Services.objects.all()
-	return render(request, 'basesite/reviews.html', context={'services': services})
+	reviews = Reviews.objects.all()
+	if request.method == "POST":
+		form = ReviewsForm(request.POST)
+		if form.is_valid():
+			post = form.save(commit=False)
+			post.save()
+	else:
+		form = ReviewsForm()
+	return render(request, 'basesite/reviews.html', context={'services': services, 'reviews': reviews, 'form': form})
+
+	
 
 def contacts(request):
 	services = Services.objects.all()
 	return render(request, 'basesite/contacts.html', context={'services': services})
 
+		
